@@ -2,7 +2,7 @@ const btnSearch = document.getElementById('btnSearch');
 
 function searchLocations() {
     const input = document.getElementById('searchInput').value.toLowerCase();
-    const resultDiv = document.getElementById('searchResults');
+    const resultDiv = document.getElementByClass('searchResults');
     resultDiv.innerHTML = '';
 
     fetch('travel_recommendation.json')
