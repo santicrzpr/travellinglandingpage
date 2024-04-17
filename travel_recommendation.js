@@ -27,12 +27,12 @@ function searchLocations() {
             }
             locations.forEach(loc => {
                 console.log(loc)
-                let newLocation = `<div class="location-wrapper">`;
-                newLocation += `<div class="location-image"><img src="${loc.imageUrl}" /></div>`;
-                newLocation += `<div class="location-info">`;
-                newLocation += `<div class="location-title">${loc.name}</div>`;
-                newLocation += `<div class="location-description">${loc.description}</div>`;
-                newLocation += `<button class="location-button">Book Now</button>`;
+                let newLocation = `<div class="destination__card">`;
+                newLocation += `<div class="location-image"><img src="assets/${loc.imageUrl}" alt="apicture"/></div>`;
+                newLocation += `<div class="card__content">`;
+                newLocation += `<h4 class="location-title">${loc.name}</h4>`;
+                newLocation += `<p class="location-description">${loc.description}</p>`;
+                newLocation += `<button class="btn">Select destination</button>`;
 
                 newLocation += `</div>`;
                 newLocation += `</div>`;
